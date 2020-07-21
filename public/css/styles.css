@@ -1,5 +1,6 @@
 body {
-	color: #333333;
+	background: #161824;
+	color: #a9acc0;
 	font-family: Arial;
 	max-width: 650px;
 	margin: 0 auto;
@@ -15,7 +16,7 @@ body {
 }
 
 footer {
-	color: #888888;
+	color: #a9acc0;
 	border-top: 1px solid #eeeeee;
 	margin-top: 16px;
 	padding: 16px 0;
@@ -27,29 +28,90 @@ header {
 }
 
 h1 {
+	letter-spacing: 5px;
 	font-size: 64px;
 	margin-bottom: 16px;
 }
 
 header a {
-	color: #888888;
+	color: #a9acc0;
 	margin-right: 16px;
 	text-decoration: none;
 }
 
 .portrait {
-	width: 250px;
+	width: 500px;
+}
+
+p {
+	font-size: 16px;
 }
 
 input {
-	border: 1px solid #cccccc;
-	padding: 8px;
+	font-size: 16px;
+	/*margin-top: 50px;*/
+	margin-right: 16px;
+	border: none;
+	border-radius: 35px;
+	outline: none;
+	padding: 16px;
+	box-shadow: 8px 8px 10px #12131c, -8px -8px 10px #1c1e2c;
 }
 
 button {
+	/*display: grid;*/
+	/*place-items: center;*/
+	outline: none;
 	cursor: pointer;
-	border: 1px solid #888888;
-	background: #888888;
-	color: white;
-	padding: 8px;
+	font-size: 16px;
+	border: none;
+	border-radius: 35px;
+	background: #161824;
+	box-shadow: 8px 8px 10px #12131c, -8px -8px 10px #1c1e2c;
+	color: #a9acc0;
+	padding: 16px 40px;
+	letter-spacing: 1.2px;
+	transition: all 0.25s ease-in-out;
 }
+
+button:hover {
+	transform: scale(0.97);
+	font-size: 19px;
+	background: linear-gradient(
+		to bottom right,
+		#0b0d17,
+		#212333);
+}
+
+/*button:focus::before {
+	content: "";
+	position: absolute;
+	width: 130px;
+	height: 60px;
+	border: solid 1px #15141b;
+	border-radius: 200px;
+	box-shadow: 8px 8px 10px #12131c, -8px -8px 10px #1c1e2c, inset 8px 8px 10px #12131c, inset -8px -8px 10px #1c1e2c;
+	transition: all 0.25s ease-in-out;
+	animation: wave 1s forwards ease-out;
+}
+
+button:focus {
+	transform: scale(0.97);
+	font-size: 19px;
+	color: #898da5;
+	box-shadow: 8px 8px 10px #12131c, -8px -8px 10px #1c1e2c, inset 8px 8px 10px #12131c, inset -8px -8px 10px #1c1e2c;
+	transition: all 0.25 ease-in-out
+}
+
+@keyframes wave {
+	from {
+		transform: scale(1.2);
+		opacity: 0.6;
+		filter: blur(0.2px);
+	}
+	to {
+		transform: scale(2);
+		opacity: 0;
+		filter: blur(2px);
+	}
+}*/
